@@ -1,0 +1,306 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  
+
+
+
+    <div class="contppal">
+    
+    
+    
+        <div class="grid">
+
+<div class="card">
+  <div class="card-contenedor">
+    <div class="card-frontal">
+      <p>Lado Frontal</p>
+    </div>
+    <div class="card-trasera">
+      <p>Lado Posterior</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="pru">
+    <h1>Codigo Html </h1>
+    <p>
+&lt;div class="card&quot;&gt; <br>
+  &lt;div class="card-contenedor&quot;&gt; <br>
+    &lt;div class="card-frontal&quot;&gt; <br>
+      &lt;p>lado Frontal&lt;/p&gt; <br>
+    &lt;/div&gt; <br>
+    &lt;div class="card-trasera&quot;&gt; <br>
+      &lt;p>Lado Posterior &lt;/p&gt; <br>
+    &lt;/div&gt; <br>
+  &lt;/div&gt; <br>
+&lt;/div&gt; <br> </p>
+
+</div>
+
+
+
+<div class="pru2">
+    <h1>Codigo css</h1>
+    <br>
+    <p>
+.card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-contenedor {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-contenedor {
+  transform: rotateY(180deg);
+}
+
+.card-frontal,
+.card-trasera {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-frontal {
+  background-color: #6A2C70;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #6A2C70;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.card-trasera{
+  background-color: #F08A5D;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #F08A5D;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+} </p>
+    
+</div>
+
+<!--  2 filaaaaa --> 
+<div class="boton-celda">
+<button>
+  <span>BUTTON</span>
+</button>
+</div>
+
+
+<div class="pru">
+    <h1>Codigo Html </h1>
+    <br>
+&lt;button&gt <br>
+  &lt;span&gtBUTTON &lt;/span&gt <br>
+&lt;/button&gt <br>
+
+</div>
+
+
+
+
+
+<div class="pru2">
+    <h1>Codigo css</h1>
+    <br>
+    <p>
+button {
+  position: relative; <br>
+  display: flex; <br>
+  justify-content: center; <br>
+  align-items: center; <br>
+  border-radius: 5px; <br>
+  background: #183153; <br>
+  font-family: "Montserrat", sans-serif; <br>
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2); <br>
+  overflow: hidden; <br>
+  cursor: pointer; <br>
+  border: none; <br>
+}
+
+button:after {
+  content: " "; <br>
+  width: 0%; <br>
+  height: 100%; <br>
+  background: #ffd401; <br>
+  position: absolute; <br> 
+  transition: all 0.4s ease-in-out; <br>
+  right: 0; <br>
+}
+
+button:hover::after {<br>
+  right: auto; <br>
+  left: 0; <br>
+  width: 100%; br 
+}
+
+button span { <br>
+  text-align: center; <br>
+  text-decoration: none; <br> 
+  width: 100%; <br>
+  padding: 18px 25px; <br>
+  color: #fff; <br>
+  font-size: 1.125em; <br>
+  font-weight: 700; <br>
+  letter-spacing: 0.3em; <br>      
+  z-index: 20; <br>
+  transition: all 0.3s ease-in-out; <br>
+}
+
+button:hover span { <br>
+  color: #183153; <br>
+  animation: scaleUp 0.3s ease-in-out; <br>
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+    
+ </p>
+    
+</div>
+
+
+
+<!--  3 filaaaaa --> 
+ 
+ <div class="boton-celda">
+<div class="checkbox-w">
+  <input id="terms-checkbox-37" name="checkbox" type="checkbox">
+  <label class="terms-label" for="terms-checkbox-37">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 200 200" class="checkbox-svg">
+      <mask fill="white" id="path-1-inside-1_476_5-37">
+        <rect height="200" width="200"></rect>
+      </mask>
+      <rect mask="url(#path-1-inside-1_476_5-37)" stroke-width="40" class="checkbox-box" height="200" width="200"></rect>
+      <path stroke-width="15" d="M52 111.018L76.9867 136L149 64" class="checkbox-tick"></path>
+    </svg>
+    <span class="label-text">Checkbox</span>
+  </label>
+</div>
+</div>
+
+
+<div class="pru">
+    <h1>Codigo Html </h1>
+ &lt;div class="checkbox-wrapper"&gt;
+  &lt;input id="terms-checkbox-37" name="checkbox" type="checkbox"&gt;
+  &lt;label class="terms-label" for="terms-checkbox-37"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 200 200" class="checkbox-svg"&gt;
+      &lt;mask fill="white" id="path-1-inside-1_476_5-37"&gt;
+        &lt;rect height="200" width="200"&gt;&lt;/rect&gt;
+      &lt;/mask&gt;
+      &lt;rect mask="url(#path-1-inside-1_476_5-37)" stroke-width="40" class="checkbox-box" height="200" width="200"&gt;&lt;/rect&gt;
+      &lt;path stroke-width="15" d="M52 111.018L76.9867 136L149 64" class="checkbox-tick"&gt;&lt;/path&gt;
+   &lt;/svg&gt;
+   &lt;span class="label-text"&gt;Checkbox&lt;/span&gt;
+ &lt;/label&gt;
+&lt;/div&gt;
+
+
+</div>
+
+
+
+<div class="pru2">
+    <h1>Codigo css</h1>
+    <br>
+    <p>
+ .checkbox-w input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-w .terms-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-w .terms-label .label-text {
+  margin-left: 10px;
+}
+
+.checkbox-w .checkbox-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.checkbox-w .checkbox-box {
+  fill: rgba(207, 205, 205, 0.425);
+  stroke: #8c00ff;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  transition: stroke-dashoffset 0.6s ease-in;
+}
+
+.checkbox-w .checkbox-tick {
+  stroke: #8c00ff;
+  stroke-dasharray: 172;
+  stroke-dashoffset: 172;
+  transition: stroke-dashoffset 0.6s ease-in;
+}
+
+.checkbox-w input[type="checkbox"]:checked + .terms-label .checkbox-box,
+  .checkbox-w input[type="checkbox"]:checked + .terms-label .checkbox-tick {
+  stroke-dashoffset: 0;
+}
+ </p>
+    
+</div>
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+</div>
+
+</body>
+</html>
