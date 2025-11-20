@@ -447,7 +447,7 @@ details[open]::before {
 
 
 
-<!--  4 filaaaaa --> 
+<!--  5 filaaaaa --> 
 
  <div class="boton-celda">
 <input type="text" autocomplete="off" name="text" class="input" placeholder="Username">
@@ -489,6 +489,124 @@ details[open]::before {
  </p>
     
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  6 filaaaaa --> 
+
+ <div class="boton-celda">
+    <nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Blog</a>
+  <div class="animation start-home"></div>
+</nav>
+ </div>
+
+<div class="pru">
+    <h1>Codigo Html </h1>
+<p>
+
+&lt;nav> <br>
+ &lt;a href="#">Home&lt;/a&gt; <br>
+&lt;a href="#">About&lt;/a&gt; <br>
+  &lt;a href="#">Blog&lt;/a&gt; <br>
+  &lt;a href="#">Portefolio&lt;/a&gt;  
+  &lt;a href="#">Contact&lt;/a&gt; 
+  &lt;div class="animation start-home"&gt;&lt;/div&gt; 
+&lt;/nav&gt;
+</p>
+
+</div>
+
+
+
+
+<div class="pru2">
+    <h1>Codigo css</h1>
+    <br>
+    <p>
+  
+nav {
+  margin: 35px auto 0;
+
+  position: relative;
+ 
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 50px;
+}
+a:nth-child(2) {
+  width: 50px;
+}
+a:nth-child(3) {
+  width: 50px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 50px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 55px;
+  left: 50px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 45px;
+  left: 105px;
+  background-color: #3498db;
+}
+
+
+body {
+  font-size: 12px;
+  font-family: sans-serif;
+  background: #2c3e50;
+
+}
+ </p>
+    
+</div>
+
+
+
 
 
 

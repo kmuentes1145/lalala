@@ -11,7 +11,7 @@
 .grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(6,200px);
+    grid-template-rows: repeat(7,200px);
     gap: 40px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -216,9 +216,6 @@ button:hover span {
 
 
 
-
-
-/* From Uiverse.io by PriyanshuGupta28 */ 
 .checkbox-w input[type="checkbox"] {
   display: none;
 }
@@ -436,8 +433,72 @@ details[open]::before {
 
 
 
+/* 6to */ 
 
 
+nav {
+  margin: 35px auto 0;
+
+  position: relative;
+ 
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 50px;
+}
+a:nth-child(2) {
+  width: 50px;
+}
+a:nth-child(3) {
+  width: 50px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 50px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 55px;
+  left: 50px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 45px;
+  left: 105px;
+  background-color: #3498db;
+}
+
+
+body {
+  font-size: 12px;
+  font-family: sans-serif;
+  background: #2c3e50;
+
+}
 
 
 
